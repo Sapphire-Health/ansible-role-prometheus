@@ -2,7 +2,7 @@
 galaxy_info:
   license: MIT
   min_ansible_version: "2.10"
-  role_name: kuiper
+  role_name: prometheus
   author: Lyas Spiehler
   description: Ansible role for deploying a Prometheus server in a container
   company: Sapphire Health
