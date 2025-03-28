@@ -77,3 +77,13 @@
     - auth_openidc
   notify:
     - Restart apache
+- name: Create /var/docker
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: '02775'
+    owner: root
+    group: docker
+  loop:
+    - /var/docker
+    - /var/docker/prometheus
